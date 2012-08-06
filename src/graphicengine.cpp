@@ -30,3 +30,8 @@ GraphicEngine::~GraphicEngine()
 
 }
 
+void GraphicEngine::create(Vertexbuffer** vertexbuffer)
+{
+
+}
+

@@ -21,12 +21,15 @@
 #ifndef GRAPHICENGINE_H
 #define GRAPHICENGINE_H
 
+class Vertexbuffer;
+
 class GraphicEngine
 {
 
 public:
     GraphicEngine();
     virtual ~GraphicEngine();
+	void create(Vertexbuffer **);
 };
 
 #endif // GRAPHICENGINE_H
