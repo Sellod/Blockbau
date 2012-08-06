@@ -18,20 +18,15 @@
 */
 
 
-#ifndef GRAPHICENGINE_H
-#define GRAPHICENGINE_H
+#ifndef TEXTUR_H
+#define TEXTUR_H
 
-class Vertexbuffer;
-class Textur;
-
-class GraphicEngine
+class Textur
 {
 
 public:
-    GraphicEngine();
-    virtual ~GraphicEngine();
-	void create(Vertexbuffer **vertexbuffer);
-	void create(Textur **textur);
+    Textur();
+    virtual ~Textur();
 };
 
-#endif // GRAPHICENGINE_H
+#endif // TEXTUR_H

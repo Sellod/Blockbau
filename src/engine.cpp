@@ -24,7 +24,7 @@
 #include "gameengine.h"
 
 
-Engine::Engine():_gameEngine(NULL),_graphicEngine(NULL)
+Engine::Engine():_gameEngine(),_graphicEngine()
 {
 
 }
