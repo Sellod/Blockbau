@@ -1,2 +1,3 @@
-add_library(blockbauobj application.cpp engine.cpp gameengine.cpp graphicengine.cpp vertexbuffer.cpp)
+add_library(blockbauobj application.cpp engine.cpp gameengine.cpp graphicengine.cpp vertexbuffer.cpp
+textur.cpp)
 

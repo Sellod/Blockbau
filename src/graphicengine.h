@@ -21,6 +21,8 @@
 #ifndef GRAPHICENGINE_H
 #define GRAPHICENGINE_H
 
+
+
 class Vertexbuffer;
 class Textur;
 
@@ -32,6 +34,7 @@ public:
     virtual ~GraphicEngine();
 	void create(Vertexbuffer **vertexbuffer);
 	void create(Textur **textur);
+	int openscreen(int width,int hight);
 };
 
 #endif // GRAPHICENGINE_H

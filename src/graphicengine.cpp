@@ -19,19 +19,31 @@
 
 
 #include "graphicengine.h"
+#include <SDL/SDL.h>
 
 GraphicEngine::GraphicEngine()
 {
-
+	SDL_Init(SDL_INIT_VIDEO);
 }
 
 GraphicEngine::~GraphicEngine()
 {
-
+	SDL_Quit();
 }
 
 void GraphicEngine::create(Vertexbuffer** vertexbuffer)
 {
 
 }
+
+void GraphicEngine::create(Textur** textur)
+{
+
+}
+
+int GraphicEngine::openscreen(int width, int hight)
+{
+
+}
+
 
