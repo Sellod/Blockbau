@@ -24,13 +24,24 @@
 
 class Textur
 {
-
-public:
-    Textur();
-    virtual ~Textur();
-	int loadup();
 private:
-	SDL_Surface * _texture;
+	SDL_Surface *_tex;
+	GLuint _id;
+	bool _isLoadup;
+	std::string _filename;
+	
+public:
+    Texture();
+
+    ~Texture();
+    void load(std::string filename);
+    void loadup();
+    void destroyUp();
+    SDL_Surface * getSDL_Surface();
+    void setSDL_Surface(SDL_Surface* tex);
+    std::string getFilename();
+    int geth();
+    int getw();
 };
 
 #endif // TEXTUR_H
