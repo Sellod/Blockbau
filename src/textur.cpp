@@ -30,3 +30,7 @@ Textur::~Textur()
 
 }
 
+int Textur::loadup()
+{
+	return 0;
+}

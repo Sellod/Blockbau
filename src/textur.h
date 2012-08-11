@@ -20,6 +20,7 @@
 
 #ifndef TEXTUR_H
 #define TEXTUR_H
+#include <SDL/SDL_video.h>
 
 class Textur
 {
@@ -27,6 +28,9 @@ class Textur
 public:
     Textur();
     virtual ~Textur();
+	int loadup();
+private:
+	SDL_Surface * _texture;
 };
 
 #endif // TEXTUR_H
