@@ -36,7 +36,7 @@ void GraphicEngine::create(Vertexbuffer** vertexbuffer)
 
 }
 
-void GraphicEngine::create(Textur** textur)
+void GraphicEngine::create(Texture** textur)
 {
 
 }

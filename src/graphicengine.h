@@ -24,7 +24,7 @@
 
 
 class Vertexbuffer;
-class Textur;
+class Texture;
 
 class GraphicEngine
 {
@@ -33,7 +33,7 @@ public:
     GraphicEngine();
     virtual ~GraphicEngine();
 	void create(Vertexbuffer **vertexbuffer);
-	void create(Textur **textur);
+	void create(Texture **textur);
 	int openscreen(int width,int hight);
 };
 
