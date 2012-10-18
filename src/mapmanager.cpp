@@ -18,19 +18,15 @@
 */
 
 
-#ifndef WORLD_H
-#define WORLD_H
+#include "mapmanager.h"
 
-class Map;
-
-class World
+MapManager::MapManager()
 {
 
-public:
-    World();
-    virtual ~World();
-private:
-	Map *_map;
-};
+}
 
-#endif // WORLD_H
+MapManager::~MapManager()
+{
+
+}
+

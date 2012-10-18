@@ -22,19 +22,27 @@
 #include "engine.h"
 #include "graphicengine.h"
 #include "gameengine.h"
+#include "keyboard.h"
+#include <SDL/SDL.h>
 
-
-Engine::Engine():_gameEngine(),_graphicEngine()
+Engine::Engine()
 {
-
+	_graphicEngine = new GraphicEngine;
+	_gameEngine = new GameEngine;
+	_keyboard = new Keyboard;
+	
+	_graphicEngine->openScreen(800,600,32);
 }
 
 Engine::~Engine()
 {
-
+	_graphicEngine->closeScreen();
 }
 
 int Engine::run()
 {
-
+	while(_keyboard->isEscapePress()==false) {
+		
+		SDL_PumpEvents();
+	};
 }

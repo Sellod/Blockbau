@@ -33,8 +33,11 @@ public:
     GraphicEngine();
     virtual ~GraphicEngine();
 	void create(Vertexbuffer **vertexbuffer);
+	void destroy(Vertexbuffer *vertexbuffer);
 	void create(Texture **textur);
-	int openscreen(int width,int hight);
+	void destroy(Texture *textur);
+	int openScreen(int width,int hight,int bpp);
+	void closeScreen();
 };
 
 #endif // GRAPHICENGINE_H

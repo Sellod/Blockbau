@@ -18,19 +18,15 @@
 */
 
 
-#ifndef WORLD_H
-#define WORLD_H
+#ifndef GUIMANAGER_H
+#define GUIMANAGER_H
 
-class Map;
-
-class World
+class GuiManager
 {
 
 public:
-    World();
-    virtual ~World();
-private:
-	Map *_map;
+    GuiManager();
+    virtual ~GuiManager();
 };
 
-#endif // WORLD_H
+#endif // GUIMANAGER_H

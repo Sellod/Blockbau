@@ -23,6 +23,7 @@
 
 class GameEngine;
 class GraphicEngine;
+class Keyboard;
 
 class Engine
 {
@@ -36,6 +37,7 @@ public:
 private:
 	GameEngine *_gameEngine;
 	GraphicEngine *_graphicEngine;
+	Keyboard *_keyboard;
 };
 
 #endif // ENGINE_H

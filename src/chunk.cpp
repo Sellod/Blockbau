@@ -22,7 +22,7 @@
 
 Chunk::Chunk(int xcoor, int ycoor, int zcoor):_xcoor(xcoor),_ycoor(ycoor),_zcoor(zcoor)
 {
-	_data.assign(4096,0);
+	_data.assign(4096,0);  // 16*16*16
 }
 
 

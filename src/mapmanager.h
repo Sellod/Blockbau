@@ -18,19 +18,20 @@
 */
 
 
-#ifndef WORLD_H
-#define WORLD_H
+#ifndef MAPMANAGER_H
+#define MAPMANAGER_H
+#include <vector>
 
-class Map;
+class World;
 
-class World
+class MapManager
 {
 
 public:
-    World();
-    virtual ~World();
+    MapManager();
+    virtual ~MapManager();
 private:
-	Map *_map;
+	std::vector<World*> _world;
 };
 
-#endif // WORLD_H
+#endif // MAPMANAGER_H
