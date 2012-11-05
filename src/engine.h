@@ -24,6 +24,7 @@
 class GameEngine;
 class GraphicEngine;
 class Keyboard;
+class GuiManager;
 
 class Engine
 {
@@ -37,6 +38,7 @@ public:
 private:
 	GameEngine *_gameEngine;
 	GraphicEngine *_graphicEngine;
+	GuiManager *_guiManager;
 	Keyboard *_keyboard;
 };
 

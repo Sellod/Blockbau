@@ -19,14 +19,26 @@
 
 
 #include "gameengine.h"
+#include "mapmanager.h"
+
 
 GameEngine::GameEngine()
 {
+	_mapManager = new MapManager;
 
 }
 
 GameEngine::~GameEngine()
 {
-
+	delete _mapManager;
 }
+
+int GameEngine::startGame()
+{
+	
+	_mapManager->makeFlatMap();
+	
+	return 0;
+}
+
 

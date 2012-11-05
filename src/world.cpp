@@ -19,14 +19,19 @@
 
 
 #include "world.h"
+#include <iostream>
+
 
 World::World()
 {
-
+	_map = NULL;
 }
 
 World::~World()
 {
 
 }
+void World::create(Map** map)
+{
 
+}

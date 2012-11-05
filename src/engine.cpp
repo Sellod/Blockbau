@@ -23,6 +23,7 @@
 #include "graphicengine.h"
 #include "gameengine.h"
 #include "keyboard.h"
+#include "guimanager.h"
 #include <SDL/SDL.h>
 
 Engine::Engine()
@@ -30,6 +31,7 @@ Engine::Engine()
 	_graphicEngine = new GraphicEngine;
 	_gameEngine = new GameEngine;
 	_keyboard = new Keyboard;
+	_guiManager = new GuiManager;
 	
 	_graphicEngine->openScreen(800,600,32);
 }
@@ -45,4 +47,5 @@ int Engine::run()
 		
 		SDL_PumpEvents();
 	};
+	return 0;
 }

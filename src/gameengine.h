@@ -21,12 +21,18 @@
 #ifndef GAMEENGINE_H
 #define GAMEENGINE_H
 
+class MapManager;
+
 class GameEngine
 {
 
 public:
     GameEngine();
     virtual ~GameEngine();
+	int startGame();
+private:
+	MapManager *_mapManager;
+	
 };
 
 #endif // GAMEENGINE_H

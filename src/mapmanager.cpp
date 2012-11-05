@@ -19,6 +19,8 @@
 
 
 #include "mapmanager.h"
+#include "world.h"
+#include "map.h"
 
 MapManager::MapManager()
 {
@@ -29,4 +31,33 @@ MapManager::~MapManager()
 {
 
 }
+
+Map* MapManager::makeFlatMap()
+{
+	World* world;
+	
+	create(&world);
+	
+	insertWorld(world);
+	
+}
+
+void MapManager::create(World** world)
+{
+	World *newworld;
+	newworld = new World;
+	(*world) = newworld;
+}
+
+void MapManager::deleteWorld(World* world)
+{
+	_worlds.remove(world);
+}
+
+void MapManager::insertWorld(World* world)
+{
+	_worlds.insert(_worlds.begin(),world);
+	
+}
+
 

@@ -85,6 +85,8 @@ int GraphicEngine::openScreen(int width, int hight, int bpp)
 
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+	
+	return 0;
 }
 
 void GraphicEngine::closeScreen()

@@ -3,7 +3,7 @@
 
 
 
-main()
+int main()
 {
 
 	Application *app;

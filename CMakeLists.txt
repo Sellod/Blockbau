@@ -8,6 +8,9 @@ include_directories (${blockbau_SOURCE_DIR}/src)
 
 link_directories (${blockbau_SOURCE_DIR}/src)
 
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -Wall ")
+
+
 find_package(SDL REQUIRED)
 find_package(SDL_ttf REQUIRED)
 find_package(SDL_image REQUIRED)

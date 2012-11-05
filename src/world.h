@@ -21,6 +21,8 @@
 #ifndef WORLD_H
 #define WORLD_H
 
+#include <string>
+
 class Map;
 
 class World
@@ -30,7 +32,9 @@ public:
     World();
     virtual ~World();
 private:
+	void create(Map **map);
 	Map *_map;
+	std::string _name;
 };
 
 #endif // WORLD_H
