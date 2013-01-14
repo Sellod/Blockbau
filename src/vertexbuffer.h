@@ -21,9 +21,18 @@
 #ifndef VERTEXBUFFER_H
 #define VERTEXBUFFER_H
 
+#define GL_GLEXT_PROTOTYPES
+
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include <GL/glx.h>
+#include <GL/glext.h>
+#include <GL/glxext.h>
+
 class Vertexbuffer
 {
-
+private:
+	GLuint _id;
 public:
     Vertexbuffer();
     virtual ~Vertexbuffer();

@@ -31,10 +31,12 @@ class World
 public:
     World();
     virtual ~World();
+	void setFlatMap();
 private:
 	void create(Map **map);
 	Map *_map;
 	std::string _name;
+	int _type; // 0=flat 1=normal
 };
 
 #endif // WORLD_H

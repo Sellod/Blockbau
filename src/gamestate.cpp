@@ -18,19 +18,34 @@
 */
 
 
-#ifndef GUIMANAGER_H
-#define GUIMANAGER_H
+#include "gamestate.h"
 
-class GraphicEngine;
-
-class GuiManager
+GameState::GameState():_quit(false),_kartenType(normal)
 {
 
-public:
-    GuiManager(GraphicEngine *graphicengine);
-    virtual ~GuiManager();
-private:
-	GraphicEngine *_graphicengine;
-};
+}
 
-#endif // GUIMANAGER_H
+GameState::~GameState()
+{
+
+}
+
+const bool GameState::isQuit()
+{
+	return _quit;
+}
+
+void GameState::setQuit()
+{
+	_quit = true;
+}
+
+GameState::KartenType GameState::isKartenType()
+{
+	return _kartenType;
+}
+
+void GameState::setKartenType(GameState::KartenType kartentype)
+{
+
+}

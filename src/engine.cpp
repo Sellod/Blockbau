@@ -31,9 +31,9 @@ Engine::Engine()
 	_graphicEngine = new GraphicEngine;
 	_gameEngine = new GameEngine;
 	_keyboard = new Keyboard;
-	_guiManager = new GuiManager;
+	_guiManager = new GuiManager(_graphicEngine);
 	
-	_graphicEngine->openScreen(800,600,32);
+	
 }
 
 Engine::~Engine()
@@ -43,9 +43,15 @@ Engine::~Engine()
 
 int Engine::run()
 {
+	
+	_graphicEngine->openScreen(800,600,32);
+	
+	_gameEngine->startGame();
+	
 	while(_keyboard->isEscapePress()==false) {
 		
 		SDL_PumpEvents();
 	};
+	
 	return 0;
 }

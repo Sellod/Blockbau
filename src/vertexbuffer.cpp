@@ -22,7 +22,7 @@
 
 Vertexbuffer::Vertexbuffer()
 {
-
+	glGenBuffers(1, &_id);
 }
 
 Vertexbuffer::~Vertexbuffer()

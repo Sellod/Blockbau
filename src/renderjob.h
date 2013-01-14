@@ -1,6 +1,6 @@
 /*
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2012  Stefan Sterzing <stefan.sterzing@snafu.de>
+    Copyright (C) 2013  Stefan Sterzing <stefan.sterzing@snafu.de>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,19 +18,22 @@
 */
 
 
-#ifndef GUIMANAGER_H
-#define GUIMANAGER_H
+#ifndef RENDERJOB_H
+#define RENDERJOB_H
 
-class GraphicEngine;
+class Vertexbuffer;
+class Texture;
 
-class GuiManager
+class RenderJob
 {
-
 public:
-    GuiManager(GraphicEngine *graphicengine);
-    virtual ~GuiManager();
+	RenderJob();
+	~RenderJob();
 private:
-	GraphicEngine *_graphicengine;
+	Texture *_texture;
+	Vertexbuffer *_vertexbuffer;
+	int _vonvertex;
+	int _bisvertex;
 };
 
-#endif // GUIMANAGER_H
+#endif // RENDERJOB_H

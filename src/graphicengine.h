@@ -25,6 +25,7 @@
 
 class Vertexbuffer;
 class Texture;
+class Kamera;
 
 class GraphicEngine
 {
@@ -36,7 +37,11 @@ public:
 	void destroy(Vertexbuffer *vertexbuffer);
 	void create(Texture **textur);
 	void destroy(Texture *textur);
+	void create(Kamera **kamera);
+	void destroy(Kamera *kamera);
 	int openScreen(int width,int hight,int bpp);
+	bool render();
+	
 	void closeScreen();
 };
 

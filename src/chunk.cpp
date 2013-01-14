@@ -36,12 +36,12 @@ int Chunk::load()
 	return 0;
 }
 
-void Chunk::set(int x, int y, int z,uint8_t wert)
+void Chunk::set(int x, int y, int z,uint16_t wert)
 {
 	_data[x+y*16+z*16*16]=wert;
 }
 
-int Chunk::get(int x, int y, int z)
+uint16_t Chunk::get(int x, int y, int z)
 {
 	return _data[x+y*16+z*16*16];
 }

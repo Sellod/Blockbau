@@ -31,11 +31,11 @@ public:
 	Chunk(int xcoor,int ycoor,int zcoor);
     virtual ~Chunk();
 	int load();
-	void set(int x,int y,int z,uint8_t wert);
-	int get(int x,int y,int z);
+	void set(int x,int y,int z,uint16_t wert);
+	uint16_t get(int x,int y,int z);
 private:
 	int _xcoor,_ycoor,_zcoor;
-	std::vector<uint8_t> _data;
+	std::vector<uint16_t> _data;
 };
 
 #endif // CHUNK_H

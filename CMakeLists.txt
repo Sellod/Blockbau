@@ -16,6 +16,7 @@ find_package(SDL_ttf REQUIRED)
 find_package(SDL_image REQUIRED)
 find_package(OpenGL REQUIRED)
 find_package(LibXml2 REQUIRED)
+find_package(Boost REQUIRED)
 
 add_subdirectory (src) 
 

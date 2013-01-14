@@ -20,11 +20,12 @@
 
 #include "gameengine.h"
 #include "mapmanager.h"
-
+#include "gamestate.h"
 
 GameEngine::GameEngine()
 {
 	_mapManager = new MapManager;
+	_gameState = new GameState;
 
 }
 

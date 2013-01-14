@@ -21,10 +21,11 @@
 #include "mapmanager.h"
 #include "world.h"
 #include "map.h"
+#include <boost/thread/thread.hpp>
+
 
 MapManager::MapManager()
 {
-
 }
 
 MapManager::~MapManager()
@@ -32,13 +33,14 @@ MapManager::~MapManager()
 
 }
 
-Map* MapManager::makeFlatMap()
+void  MapManager::makeFlatMap()
 {
 	World* world;
 	
 	create(&world);
 	
 	insertWorld(world);
+	world->setFlatMap();
 	
 }
 

@@ -22,6 +22,7 @@
 #include <SDL/SDL.h>
 #include "texture.h"
 #include "vertexbuffer.h"
+#include "kamera.h"
 
 GraphicEngine::GraphicEngine()
 {
@@ -93,6 +94,12 @@ void GraphicEngine::closeScreen()
 {
 
 }
+
+bool GraphicEngine::render()
+{
+	return true;
+}
+
 
 
 

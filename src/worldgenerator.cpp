@@ -18,19 +18,15 @@
 */
 
 
-#ifndef GUIMANAGER_H
-#define GUIMANAGER_H
+#include "worldgenerator.h"
 
-class GraphicEngine;
-
-class GuiManager
+WorldGenerator::WorldGenerator()
 {
 
-public:
-    GuiManager(GraphicEngine *graphicengine);
-    virtual ~GuiManager();
-private:
-	GraphicEngine *_graphicengine;
-};
+}
 
-#endif // GUIMANAGER_H
+WorldGenerator::~WorldGenerator()
+{
+
+}
+

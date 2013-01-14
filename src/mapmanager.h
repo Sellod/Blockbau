@@ -32,7 +32,7 @@ class MapManager
 public:
     MapManager();
     virtual ~MapManager();
-	Map* makeFlatMap();
+	void makeFlatMap();
 	void create(World** world);
 	void insertWorld(World* world);
 	void deleteWorld(World* world);

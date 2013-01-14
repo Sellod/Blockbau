@@ -18,19 +18,25 @@
 */
 
 
-#ifndef GUIMANAGER_H
-#define GUIMANAGER_H
+#ifndef GAMESTATE_H
+#define GAMESTATE_H
 
-class GraphicEngine;
-
-class GuiManager
+class GameState
 {
 
 public:
-    GuiManager(GraphicEngine *graphicengine);
-    virtual ~GuiManager();
+    GameState();
+    virtual ~GameState();
+	
+	enum KartenType { flach, normal };
+	const bool isQuit();
+	KartenType isKartenType();
+	
+	void setQuit();
+	void setKartenType(KartenType kartentype);
 private:
-	GraphicEngine *_graphicengine;
+	bool _quit;
+	KartenType _kartenType;
 };
 
-#endif // GUIMANAGER_H
+#endif // GAMESTATE_H

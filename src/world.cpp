@@ -35,3 +35,9 @@ void World::create(Map** map)
 {
 
 }
+
+void World::setFlatMap()
+{
+	_type = 0;
+}
+

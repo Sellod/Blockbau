@@ -22,6 +22,7 @@
 #define GAMEENGINE_H
 
 class MapManager;
+class GameState;
 
 class GameEngine
 {
@@ -32,6 +33,7 @@ public:
 	int startGame();
 private:
 	MapManager *_mapManager;
+	GameState *_gameState;
 	
 };
 

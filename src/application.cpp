@@ -33,7 +33,7 @@ Application::~Application()
 
 int Application::run()
 {
-	std::cout << "BlockBau Version 0.01.2" << std::endl;
+	std::cout << "BlockBau Version 0.01.3" << std::endl;
 	return _engine->run();
 
 }

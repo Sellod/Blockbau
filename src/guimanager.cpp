@@ -20,7 +20,7 @@
 
 #include "guimanager.h"
 
-GuiManager::GuiManager()
+GuiManager::GuiManager(GraphicEngine *graphicengine)
 {
 
 }
