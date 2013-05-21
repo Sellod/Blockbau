@@ -23,6 +23,7 @@
 
 #include <string>
 
+class WorldGenerator;
 class Map;
 
 class World
@@ -32,11 +33,14 @@ public:
     World();
     virtual ~World();
 	void setFlatMap();
+	void create(Map **map,std::string name);
+	void destroy();
+	void render();
 private:
-	void create(Map **map);
 	Map *_map;
 	std::string _name;
 	int _type; // 0=flat 1=normal
+	WorldGenerator *_worldGenerator;
 };
 
 #endif // WORLD_H

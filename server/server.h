@@ -1,6 +1,6 @@
 /*
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2012  Stefan Sterzing <stefan.sterzing@snafu.de>
+    Copyright (C) 2013  Stefan Sterzing <stefan.sterzing@snafu.de>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,19 +18,26 @@
 */
 
 
-#include "guimanager.h"
+#ifndef SERVER_H
+#define SERVER_H
 
-GuiManager::GuiManager(GraphicEngine *graphicengine):_graphicengine(graphicengine)
+#include <boost/asio.hpp>
+
+using namespace boost::asio;
+
+using boost::asio::ip::tcp;
+
+namespace Server {
+
+class Server
 {
+public:
+	Server();
+	~Server();
+private:
+	io_service _io_service;
+	ip::tcp::acceptor *_acceptor;
+};
 
-}
-
-GuiManager::~GuiManager()
-{
-
-}
-
-void GuiManager::update()
-{
-
-}
+};
+#endif // SERVER_H

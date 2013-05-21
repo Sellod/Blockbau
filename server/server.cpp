@@ -1,6 +1,6 @@
 /*
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2012  Stefan Sterzing <stefan.sterzing@snafu.de>
+    Copyright (C) 2013  Stefan Sterzing <stefan.sterzing@snafu.de>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,19 +18,16 @@
 */
 
 
-#include "guimanager.h"
+#include "server.h"
 
-GuiManager::GuiManager(GraphicEngine *graphicengine):_graphicengine(graphicengine)
+
+Server::Server::Server()
 {
 
 }
 
-GuiManager::~GuiManager()
+Server::Server::~Server()
 {
 
 }
 
-void GuiManager::update()
-{
-
-}

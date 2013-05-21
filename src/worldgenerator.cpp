@@ -19,6 +19,8 @@
 
 
 #include "worldgenerator.h"
+#include <boost/bind.hpp>
+
 
 WorldGenerator::WorldGenerator()
 {
@@ -30,3 +32,13 @@ WorldGenerator::~WorldGenerator()
 
 }
 
+void WorldGenerator::run()
+{
+
+}
+
+
+void WorldGenerator::setWorldMode()
+{
+
+}

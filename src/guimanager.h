@@ -29,6 +29,7 @@ class GuiManager
 public:
     GuiManager(GraphicEngine *graphicengine);
     virtual ~GuiManager();
+	void update();
 private:
 	GraphicEngine *_graphicengine;
 };

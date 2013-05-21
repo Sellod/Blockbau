@@ -42,4 +42,8 @@ int GameEngine::startGame()
 	return 0;
 }
 
+bool GameEngine::update()
+{
+	return true;
+}
 

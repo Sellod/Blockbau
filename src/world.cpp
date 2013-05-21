@@ -19,6 +19,7 @@
 
 
 #include "world.h"
+#include "map.h"
 #include <iostream>
 
 
@@ -31,13 +32,25 @@ World::~World()
 {
 
 }
-void World::create(Map** map)
+void World::create(Map** map,std::string name)
 {
-
+	_name = name;
+	(*map) = new Map;
 }
 
 void World::setFlatMap()
 {
+	create(&_map,"testmap");
 	_type = 0;
+}
+
+void World::render()
+{
+
+}
+
+void World::destroy()
+{
+	delete _map;
 }
 

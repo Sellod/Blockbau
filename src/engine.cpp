@@ -50,6 +50,10 @@ int Engine::run()
 	
 	while(_keyboard->isEscapePress()==false) {
 		
+		_gameEngine->update();
+		_guiManager->update();
+		_graphicEngine->render();
+		
 		SDL_PumpEvents();
 	};
 	

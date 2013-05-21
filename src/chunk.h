@@ -24,6 +24,8 @@
 #include <stdint.h>
 #include <vector>
 
+class Map;
+
 class Chunk
 {
 
@@ -31,11 +33,13 @@ public:
 	Chunk(int xcoor,int ycoor,int zcoor);
     virtual ~Chunk();
 	int load();
+	bool generate();
 	void set(int x,int y,int z,uint16_t wert);
 	uint16_t get(int x,int y,int z);
 private:
 	int _xcoor,_ycoor,_zcoor;
 	std::vector<uint16_t> _data;
+	Map *_map;
 };
 
 #endif // CHUNK_H

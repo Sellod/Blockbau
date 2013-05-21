@@ -24,9 +24,10 @@
 
 class World;
 class Map;
+class WorldGenerator;
+
+
 class MapManager
-
-
 {
 
 public:

@@ -46,3 +46,8 @@ uint16_t Chunk::get(int x, int y, int z)
 	return _data[x+y*16+z*16*16];
 }
 
+bool Chunk::generate()
+{
+	return true;
+}
+

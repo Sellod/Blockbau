@@ -31,6 +31,7 @@ public:
     GameEngine();
     virtual ~GameEngine();
 	int startGame();
+	bool update();
 private:
 	MapManager *_mapManager;
 	GameState *_gameState;

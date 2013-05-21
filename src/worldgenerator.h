@@ -27,6 +27,13 @@ class WorldGenerator
 public:
     WorldGenerator();
     virtual ~WorldGenerator();
+	void run();
+	
+	void setWorldMode();
+
+private:
+	int _mode;
 };
+
 
 #endif // WORLDGENERATOR_H
