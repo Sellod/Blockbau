@@ -19,15 +19,36 @@
 
 
 #include "server.h"
+#include "config.h"
 
 
 Server::Server::Server()
 {
-
-}
+	std::string ip;
+	
+	LIBXML_TEST_VERSION
+	_io_service = new boost::asio::io_service;
+	_config =new Config;
+	_config->load("config.xml");
+	_config->get("ip",&ip);
+	_address.from_string(ip.c_str());
+	
+};
 
 Server::Server::~Server()
 {
+	xmlCleanupParser();
+};
 
-}
+void Server::Server::start()
+{
+	
+
+};
+
+void Server::Server::stop()
+{
+
+};
+
 

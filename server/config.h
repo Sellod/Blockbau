@@ -17,33 +17,34 @@
     51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
-#ifndef SERVER_H
-#define SERVER_H
 
-#include <boost/asio.hpp>
-#include <libxml/parser.h>
+#ifndef CONFIG_H
+#define CONFIG_H
+#include <string>
+#include <vector>
 #include <libxml/tree.h>
+#include <libxml/parser.h>
+
+#include "configentry.h"
 
 namespace Server {
 
-	class Config;
-	
-class Server
+class Config
 {
+
 public:
-	Server();
-	~Server();
-	void start();
-	void stop();
+    Config();
+    virtual ~Config();
+	bool load(std::string filename);
+	void get(std::string name, std::string *ant);
+	void set(std::string name, std::string wert);
+	void set(std::string name, xmlChar *wert);
 private:
-	boost::asio::ip::address _address;
-	boost::asio::io_service *_io_service;
-	boost::asio::ip::tcp::acceptor *_acceptor;
-	Config *_config;
+	std::vector<ConfigEntry*> _data;
+	xmlDoc *_doc;
+	xmlNode *_root;
+	
 };
 
-};
-
-#endif // MYSERVER_H
-
-
+}
+#endif // CONFIG_H

@@ -139,6 +139,54 @@ application.cpp.s:
 	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/application.cpp.s
 .PHONY : application.cpp.s
 
+config.o: config.cpp.o
+.PHONY : config.o
+
+# target to build an object file
+config.cpp.o:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/config.cpp.o
+.PHONY : config.cpp.o
+
+config.i: config.cpp.i
+.PHONY : config.i
+
+# target to preprocess a source file
+config.cpp.i:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/config.cpp.i
+.PHONY : config.cpp.i
+
+config.s: config.cpp.s
+.PHONY : config.s
+
+# target to generate assembly for a file
+config.cpp.s:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/config.cpp.s
+.PHONY : config.cpp.s
+
+configentry.o: configentry.cpp.o
+.PHONY : configentry.o
+
+# target to build an object file
+configentry.cpp.o:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/configentry.cpp.o
+.PHONY : configentry.cpp.o
+
+configentry.i: configentry.cpp.i
+.PHONY : configentry.i
+
+# target to preprocess a source file
+configentry.cpp.i:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/configentry.cpp.i
+.PHONY : configentry.cpp.i
+
+configentry.s: configentry.cpp.s
+.PHONY : configentry.s
+
+# target to generate assembly for a file
+configentry.cpp.s:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/configentry.cpp.s
+.PHONY : configentry.cpp.s
+
 server.o: server.cpp.o
 .PHONY : server.o
 
@@ -163,6 +211,30 @@ server.cpp.s:
 	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/server.cpp.s
 .PHONY : server.cpp.s
 
+session.o: session.cpp.o
+.PHONY : session.o
+
+# target to build an object file
+session.cpp.o:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/session.cpp.o
+.PHONY : session.cpp.o
+
+session.i: session.cpp.i
+.PHONY : session.i
+
+# target to preprocess a source file
+session.cpp.i:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/session.cpp.i
+.PHONY : session.cpp.i
+
+session.s: session.cpp.s
+.PHONY : session.s
+
+# target to generate assembly for a file
+session.cpp.s:
+	cd /home/stefan/projects/blockbau && $(MAKE) -f server/CMakeFiles/blockbauserverobj.dir/build.make server/CMakeFiles/blockbauserverobj.dir/session.cpp.s
+.PHONY : session.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -175,9 +247,18 @@ help:
 	@echo "... application.o"
 	@echo "... application.i"
 	@echo "... application.s"
+	@echo "... config.o"
+	@echo "... config.i"
+	@echo "... config.s"
+	@echo "... configentry.o"
+	@echo "... configentry.i"
+	@echo "... configentry.s"
 	@echo "... server.o"
 	@echo "... server.i"
 	@echo "... server.s"
+	@echo "... session.o"
+	@echo "... session.i"
+	@echo "... session.s"
 .PHONY : help
 
 

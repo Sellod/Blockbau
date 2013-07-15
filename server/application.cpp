@@ -36,5 +36,7 @@ Server::Application::~Application()
 
 int Server::Application::run() {
 	
+	_server->start();
+	_server->stop();
 	return 0;
 };
