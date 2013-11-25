@@ -22,7 +22,7 @@ add_subdirectory (src)
 
 add_executable(blockbau src/blockbaumain.cpp)
 
-target_link_libraries(blockbau blockbauobj xml2 SDL SDL_ttf GL GLU stdc++ assimp SDL_image)
+target_link_libraries(blockbau blockbauobj xml2 SDL SDL_ttf GL GLU stdc++ assimp SDL_image boost_system)
 
 project(blockbauserver)
 

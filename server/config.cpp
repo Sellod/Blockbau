@@ -21,6 +21,7 @@
 #include "config.h"
 #include <iostream>
 #include <string.h>
+#include <stdlib.h>
 
 Server::Config::Config():_doc(NULL)
 {
@@ -77,6 +78,15 @@ void Server::Config::get(std::string name, std::string *ant)
 		};
 	};
 }
+
+void Server::Config::get(std::string name, int *ant)
+{
+	std::string stringant;
+	
+	get(name,&stringant);
+	(*ant) = std::atoi(stringant.c_str());
+}
+
 
 void Server::Config::set(std::string name, std::string wert)
 {

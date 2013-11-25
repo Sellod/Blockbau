@@ -32,7 +32,7 @@ class World
 public:
     World();
     virtual ~World();
-	void setFlatMap();
+	void setFlatMap(int nr);
 	void create(Map **map,std::string name);
 	void destroy();
 	void render();

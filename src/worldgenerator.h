@@ -29,7 +29,7 @@ public:
     virtual ~WorldGenerator();
 	void run();
 	
-	void setWorldMode();
+	void setWorldMode(int mode);
 
 private:
 	int _mode;

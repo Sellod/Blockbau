@@ -21,12 +21,11 @@
 #ifndef KAMERA_H
 #define KAMERA_H
 
-class Kamera
-{
+class Kamera {
 
 public:
-    Kamera();
-    virtual ~Kamera();
+     Kamera();
+     virtual ~Kamera();
 };
 
 #endif // KAMERA_H

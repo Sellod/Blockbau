@@ -35,10 +35,13 @@ public:
 	~Server();
 	void start();
 	void stop();
+	void start_session();
+	
 private:
 	boost::asio::ip::address _address;
 	boost::asio::io_service *_io_service;
 	boost::asio::ip::tcp::acceptor *_acceptor;
+	boost::asio::ip::tcp::endpoint _endpoint;
 	Config *_config;
 };
 

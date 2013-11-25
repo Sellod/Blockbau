@@ -38,7 +38,7 @@ void WorldGenerator::run()
 }
 
 
-void WorldGenerator::setWorldMode()
+void WorldGenerator::setWorldMode(int mode)
 {
 
 }

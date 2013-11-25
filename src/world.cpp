@@ -38,9 +38,9 @@ void World::create(Map** map,std::string name)
 	(*map) = new Map;
 }
 
-void World::setFlatMap()
+void World::setFlatMap(int nr)
 {
-	create(&_map,"testmap");
+	create(&_map,"test");
 	_type = 0;
 }
 

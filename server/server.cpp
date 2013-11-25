@@ -25,13 +25,18 @@
 Server::Server::Server()
 {
 	std::string ip;
+	int port;
 	
 	LIBXML_TEST_VERSION
 	_io_service = new boost::asio::io_service;
 	_config =new Config;
 	_config->load("config.xml");
 	_config->get("ip",&ip);
+	_config->get("port",&port);
 	_address.from_string(ip.c_str());
+	//_endpoint = new boost::asio::ip::tcp::endpoint(_address,port);
+	_endpoint.address(_address);
+	_endpoint.port(port);
 	
 };
 
@@ -42,7 +47,7 @@ Server::Server::~Server()
 
 void Server::Server::start()
 {
-	
+	_acceptor = new boost::asio::ip::tcp::acceptor((*_io_service),_endpoint);
 
 };
 
@@ -50,5 +55,15 @@ void Server::Server::stop()
 {
 
 };
+
+void Server::Server::start_session()
+{
+	
+	
+}
+
+
+
+
 
 

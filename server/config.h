@@ -37,6 +37,7 @@ public:
     virtual ~Config();
 	bool load(std::string filename);
 	void get(std::string name, std::string *ant);
+	void get(std::string name, int *ant);
 	void set(std::string name, std::string wert);
 	void set(std::string name, xmlChar *wert);
 private:
