@@ -21,11 +21,13 @@
 #include "gameengine.h"
 #include "mapmanager.h"
 #include "gamestate.h"
+#include "keyboard.h"
 
-GameEngine::GameEngine()
+GameEngine::GameEngine(Keyboard *keyboard,GameState *gamestate)
 {
+	_keyboard = keyboard;
+	_gameState = gamestate;
 	_mapManager = new MapManager;
-	_gameState = new GameState;
 
 }
 
@@ -44,6 +46,9 @@ int GameEngine::startGame()
 
 bool GameEngine::update()
 {
+	if (_keyboard->isEscapePress()==true) {
+		_gameState->setQuit();
+	};
 	return true;
 }
 

@@ -18,15 +18,14 @@
  *
  */
 
-#ifndef FLATWORLDGENERATOR_H
-#define FLATWORLDGENERATOR_H
+#include "oberweltmapgenerator.h"
 
-#include "worldgenerator.h"
+OberweltMapGenerator::OberweltMapGenerator ()
+{
 
-class FlatWorldGenerator :  WorldGenerator {
-public:
-     FlatWorldGenerator();
-     ~FlatWorldGenerator();
-};
+}
 
-#endif // FLATWORLDGENERATOR_H
+OberweltMapGenerator::~OberweltMapGenerator()
+{
+
+}

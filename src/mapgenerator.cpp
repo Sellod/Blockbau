@@ -1,6 +1,6 @@
 /*
     <one line to give the program's name and a brief idea of what it does.>
-    Copyright (C) 2012  Stefan Sterzing <stefan.sterzing@snafu.de>
+    Copyright (C) 2013  Stefan Sterzing <stefan.sterzing@snafu.de>
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,26 +18,19 @@
 */
 
 
-#ifndef GAMEENGINE_H
-#define GAMEENGINE_H
+#include "mapgenerator.h"
 
-class MapManager;
-class GameState;
-class Keyboard;
-
-class GameEngine
+MapGenerator::MapGenerator()
 {
 
-public:
-    GameEngine(Keyboard *keyboard,GameState *gamestate);
-    virtual ~GameEngine();
-	int startGame();
-	bool update();
-private:
-	MapManager *_mapManager;
-	GameState *_gameState;
-	Keyboard *_keyboard;
-	
-};
+}
 
-#endif // GAMEENGINE_H
+MapGenerator::~MapGenerator()
+{
+
+}
+
+void MapGenerator::run()
+{
+
+}

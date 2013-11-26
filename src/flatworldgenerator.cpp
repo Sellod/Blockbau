@@ -20,12 +20,12 @@
 
 #include "flatworldgenerator.h"
 
-FlatWorldgenerator::FlatWorldgenerator()
+FlatWorldGenerator::FlatWorldGenerator()
 {
 
 }
 
-FlatWorldgenerator::~FlatWorldgenerator()
+FlatWorldGenerator::~FlatWorldGenerator()
 {
 
 }

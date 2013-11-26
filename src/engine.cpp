@@ -23,14 +23,17 @@
 #include "graphicengine.h"
 #include "gameengine.h"
 #include "keyboard.h"
+#include "gamestate.h"
 #include "guimanager.h"
 #include <SDL/SDL.h>
 
 Engine::Engine()
 {
-	_graphicEngine = new GraphicEngine;
-	_gameEngine = new GameEngine;
 	_keyboard = new Keyboard;
+	_gameState = new GameState;
+	_graphicEngine = new GraphicEngine;
+	_gameEngine = new GameEngine(_keyboard,_gameState);
+	
 	_guiManager = new GuiManager(_graphicEngine);
 	
 	
@@ -39,6 +42,11 @@ Engine::Engine()
 Engine::~Engine()
 {
 	_graphicEngine->closeScreen();
+	delete _guiManager;
+	delete _gameEngine;
+	delete _graphicEngine;
+	delete _keyboard;
+	delete _gameState;
 }
 
 int Engine::run()

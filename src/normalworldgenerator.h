@@ -18,15 +18,13 @@
  *
  */
 
-#ifndef FLATWORLDGENERATOR_H
-#define FLATWORLDGENERATOR_H
+#ifndef NORMALWORLDGENERATOR_H
+#define NORMALWORLDGENERATOR_H
 
 #include "worldgenerator.h"
 
-class FlatWorldGenerator :  WorldGenerator {
-public:
-     FlatWorldGenerator();
-     ~FlatWorldGenerator();
+class NormalWorldGenerator :  WorldGenerator {
+     NormalWorldGenerator();
 };
 
-#endif // FLATWORLDGENERATOR_H
+#endif // NORMALWORLDGENERATOR_H

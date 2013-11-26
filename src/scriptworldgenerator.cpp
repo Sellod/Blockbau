@@ -18,15 +18,14 @@
  *
  */
 
-#ifndef FLATWORLDGENERATOR_H
-#define FLATWORLDGENERATOR_H
+#include "scriptworldgenerator.h"
 
-#include "worldgenerator.h"
+ScriptWorldGenerator::ScriptWorldGenerator()
+{
 
-class FlatWorldGenerator :  WorldGenerator {
-public:
-     FlatWorldGenerator();
-     ~FlatWorldGenerator();
-};
+}
 
-#endif // FLATWORLDGENERATOR_H
+ScriptWorldGenerator::~ScriptWorldGenerator()
+{
+
+}

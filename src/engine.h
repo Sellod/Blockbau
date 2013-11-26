@@ -22,6 +22,7 @@
 #define ENGINE_H
 
 class GameEngine;
+class GameState;
 class GraphicEngine;
 class Keyboard;
 class GuiManager;
@@ -36,6 +37,7 @@ public:
 	int run();
 	
 private:
+	GameState *_gameState;
 	GameEngine *_gameEngine;
 	GraphicEngine *_graphicEngine;
 	GuiManager *_guiManager;
