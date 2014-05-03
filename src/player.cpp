@@ -11,4 +11,7 @@ Player::~Player()
 {
 	delete _characterwert; 
 }
-
+void Player::makeHuman()
+{
+	_characterwert->setCharacterWert(0,50);
+}

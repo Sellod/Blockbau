@@ -23,26 +23,64 @@
 
 class CharacterWerte {
 private:
-	int _intelligenz;           
-	int _staerke_beine;
+	int _intelligenz;                 	// von 0 bis 200    
+	int _staerke_beine;					// 13 Stück
 	int _staerke_arme;
 	int _konstitution;
 	int _geschicklichkeit;
+	
 	int _weisheit;
 	int _charisma;
 	int _willenskraft;
 	int _wahrnehmungskraft_ohren;
 	int _wahrnehmungskraft_augen;
+	
 	int _wahrnehmungskraft_nase;
 	int _wahrnehmungskraft_tastsinn;
 	int _luck;
 	
 	
+	int _gewicht;  // in Kilo
+	int _groesse;  // int cm
+	
+	// Mensch
+	// Gut
+	// Allrouder
+	// mittel
+	// schlecht
+	
+	
+	// alles 50
+	// _gewicht 50-200
+	// /groesse 150-220
+	
+	// Elf
+	// Magie
+	// Schnell
+	// Geschickt
+	
+	
+	
+	// int 70
+	// staerke bein
+	// staerke arm 
+	// kosti 40
+	
+	// Zwerge
+	// Ausdauernd
+	// Stärke
+	
+	// Ork
+	// Krankheitsunendfindlich
+	// Giftresident
+	
+	
 public:
      CharacterWerte();
      ~CharacterWerte();
-	 void setCharacterWert(int nr,int wert);
+	 bool setCharacterWert(int nr,int wert);
 	 int getCharacterWert(int nr);
+	 
 };
 
 #endif // CHARACTERWERTE_H

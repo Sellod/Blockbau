@@ -10,6 +10,7 @@ private:
 public:
     Player();
 	~Player();
+	void makeHuman();
 };
 
 #endif // PLAYER_H

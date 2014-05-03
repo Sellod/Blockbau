@@ -56,7 +56,7 @@ int Engine::run()
 	
 	_gameEngine->startGame();
 	
-	while(_keyboard->isEscapePress()==false) {
+	while(_gameState->isQuit()==false) {
 		
 		_gameEngine->update();
 		_guiManager->update();
