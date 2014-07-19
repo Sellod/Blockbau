@@ -39,5 +39,5 @@ find_package(Boost REQUIRED)
 add_subdirectory( server)
 
 add_executable(blockbauserver server/blockbauserver.cpp)
-target_link_libraries(blockbauserver blockbauserverobj xml2 stdc++ boost_system)
+target_link_libraries(blockbauserver blockbauserverobj xml2 stdc++ boost_system pthread)
 
